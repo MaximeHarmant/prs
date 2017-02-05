@@ -1,19 +1,16 @@
+# PRISMO
+
 This is how job market will change !
 
-# Environment installation
-    pip install virtualenv
-    pip install virtualenvwrapper
+# Getting Started
 
-# Add to your shell startup file
-    export WORKON_HOME=$HOME/.virtualenvs
-    source /usr/local/bin/virtualenvwrapper.sh
+To get up and running, simply do the following:
 
-# Create virtualenv and install required packages
-    mkvirtualenv django
-    pip install -Ur requirements.txt
+    $ git clone https://github.com/MaximeHarmant/prs.git
+    $ cd prs
 
-# Later to use your workspace
-    workon django
+    # Install the requirements
+    $ pip install -r requirements.txt
 
-# Later to close your workspace
-    deactivate
+**NOTE**: We highly recommend creating a [Virtual Environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/).
+Python Virtual Environments allow developers to work in isolated sandboxes and to create separation between python packages installed via [pip](https://pypi.python.org/pypi/pip).
