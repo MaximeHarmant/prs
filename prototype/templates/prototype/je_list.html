@@ -1,0 +1,9 @@
+{% if je_list %}
+    <ul>
+    {% for je in je_list %}
+        <li><a href="{% url 'prototype:je_detail' je.id %}">{{ je.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No JE are available.</p>
+{% endif %}

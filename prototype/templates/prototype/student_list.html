@@ -1,0 +1,9 @@
+{% if student_list %}
+    <ul>
+    {% for student in student_list %}
+        <li><a href="{% url 'prototype:student_detail' student.id %}">{{ student.first_name }} {{ student.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No students are available.</p>
+{% endif %}
